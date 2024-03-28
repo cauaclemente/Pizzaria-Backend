@@ -7,7 +7,9 @@
     "node": "20.x"
   },
   "scripts": {
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev src/server.ts",
+    "start": "ts-node src/server.ts",
+    "buil": "/dist && tsc"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
