@@ -19,6 +19,7 @@
     "@types/multer": "^1.4.11",
     "@types/node": "^20.11.30",
     "ts-node-dev": "^2.0.0",
+    "tsup": "^8.0.2",
     "typescript": "^5.4.2"
   },
   "dependencies": {
