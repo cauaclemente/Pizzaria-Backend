@@ -7,9 +7,8 @@
     "node": "20.x"
   },
   "scripts": {
-    "start": "node src/serve.ts",
     "dev": "ts-node-dev src/server.ts",
-    "vercel-build": "npx prisma migrate deploy"
+    "vercel-build": "npx prisma generate && npx prisma migrate deploy"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
