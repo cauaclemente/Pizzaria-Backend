@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "ts-node-dev src/server.ts",
     "start": "ts-node src/server.ts",
-    "buil": "/dist && tsc"
+    "buil": "/dist"
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
