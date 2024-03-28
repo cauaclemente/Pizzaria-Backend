@@ -25,6 +25,7 @@ import { FinishOrdeController } from "./controllers/order/FinishOrdeController";
 import upploadConfig from "./config/multer"
 
 import { isAuthenticated } from "./middlewares/isAuthenticated";
+import { listTableOrderController } from "./controllers/order/ListTableOrderController";
 
 const router = Router();
 
@@ -55,6 +56,8 @@ router.post('/order/add', isAuthenticated, new AddItemController().handle)
 router.delete('/order/remove', isAuthenticated, new RemoveItemController().handle)
 
 router.put('/order/send', isAuthenticated, new SendOrderController().handle)
+
+router.get('/allorders', isAuthenticated, new listTableOrderController().handle)
 
 router.get('/orders', isAuthenticated, new ListOrdersController().handle)
 router.get('/order/detail', isAuthenticated, new DetailOrderController().handle)

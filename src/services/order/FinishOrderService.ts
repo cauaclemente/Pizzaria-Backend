@@ -15,7 +15,6 @@ class FinishOrderService{
                 status: true,
             }
         })
-        console.log(order)
         return order
     }
 }

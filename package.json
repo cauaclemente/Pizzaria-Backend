@@ -1,5 +1,5 @@
 {
-  "name": "Backend",
+  "name": "backend",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -24,6 +24,7 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^9.0.2",
     "multer": "^1.4.5-lts.1",
-    "prisma": "^5.11.0"
+    "prisma": "^5.11.0",
+    "react-toastify": "^10.0.5"
   }
 }
