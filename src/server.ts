@@ -9,6 +9,8 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
+const port = process.env.PORT || 3333;
+
 app.use(
     "/files",
     express.static(path.resolve(__dirname, "..", "tmp"))
